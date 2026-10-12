@@ -1,0 +1,30 @@
+{"id":"q01","question":"What is the default value of the TESTING config option in Flask?","answers":["False"],"source":"config.rst"}
+{"id":"q02","question":"What is the default name of the Flask session cookie?","answers":["session"],"source":"config.rst"}
+{"id":"q03","question":"What is the default PERMANENT_SESSION_LIFETIME in Flask?","answers":["31 days","days=31","2678400"],"source":"config.rst"}
+{"id":"q04","question":"Which HTTP status code is raised when a request exceeds MAX_CONTENT_LENGTH?","answers":["413"],"source":"config.rst"}
+{"id":"q05","question":"Which port does the Flask development server use by default?","answers":["5000"],"source":"quickstart.rst"}
+{"id":"q06","question":"Which command-line option enables debug mode when running flask run?","answers":["--debug"],"source":"quickstart.rst"}
+{"id":"q07","question":"Which function should be used to manually escape user-provided values in Flask views?","answers":["escape"],"source":"quickstart.rst"}
+{"id":"q08","question":"Which function builds a URL to a specific view function in Flask?","answers":["url_for"],"source":"quickstart.rst"}
+{"id":"q09","question":"Which Werkzeug function should be used to sanitize an uploaded file's filename?","answers":["secure_filename"],"source":"quickstart.rst"}
+{"id":"q10","question":"Which decorator registers a custom error page handler in Flask?","answers":["errorhandler"],"source":"quickstart.rst"}
+{"id":"q11","question":"Which template engine does Flask configure automatically?","answers":["Jinja"],"source":"quickstart.rst"}
+{"id":"q12","question":"Which middleware does Flask suggest for running behind a proxy?","answers":["ProxyFix"],"source":"quickstart.rst"}
+{"id":"q13","question":"What error is returned if a route receives a request method that is not allowed?","answers":["405"],"source":"errorhandling.rst"}
+{"id":"q14","question":"What error does Flask return by default for an unhandled exception when no handler is registered?","answers":["500"],"source":"errorhandling.rst"}
+{"id":"q15","question":"Which keyword argument to register_blueprint mounts a blueprint under a URL prefix?","answers":["url_prefix"],"source":"blueprints.rst"}
+{"id":"q16","question":"How do you set up an application context manually outside a request in Flask?","answers":["app_context"],"source":"appcontext.rst"}
+{"id":"q17","question":"Which Python module are Flask context locals implemented with?","answers":["contextvars"],"source":"appcontext.rst"}
+{"id":"q18","question":"Which app method creates a runner for testing Flask CLI commands?","answers":["test_cli_runner"],"source":"testing.rst"}
+{"id":"q19","question":"Which argument makes the Flask test client follow redirects?","answers":["follow_redirects"],"source":"testing.rst"}
+{"id":"q20","question":"Which test client method lets you modify the session before a request in tests?","answers":["session_transaction"],"source":"testing.rst"}
+{"id":"q21","question":"What value should the X-Content-Type-Options header be set to?","answers":["nosniff"],"source":"web-security.rst"}
+{"id":"q22","question":"Which cookie attribute protects cookie contents from being read by JavaScript?","answers":["HttpOnly"],"source":"web-security.rst"}
+{"id":"q23","question":"What SameSite value does the Flask security docs example set for the session cookie?","answers":["Lax"],"source":"web-security.rst"}
+{"id":"q24","question":"Which library is the flask command line interface built on?","answers":["Click"],"source":"cli.rst"}
+{"id":"q25","question":"Which class do you use to create a custom Click group that loads a Flask app factory?","answers":["FlaskGroup"],"source":"cli.rst"}
+{"id":"q26","question":"Which decorator adds a custom command to the flask CLI from the app object?","answers":["app.cli.command","cli.command"],"source":"cli.rst"}
+{"id":"q27","question":"Which itsdangerous class does Flask recommend to sign and validate other cookie values with expiration?","answers":["TimedSerializer"],"source":"web-security.rst"}
+{"id":"q28","question":"Which response header does Flask's security guide show for a Content Security Policy?","answers":["Content-Security-Policy"],"source":"web-security.rst"}
+{"id":"q29","question":"Which signal is sent when an application context is pushed?","answers":["appcontext_pushed"],"source":"appcontext.rst"}
+{"id":"q30","question":"What attack does setting X-Frame-Options prevent?","answers":["clickjacking"],"source":"web-security.rst"}
