@@ -1,0 +1,66 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 12647.13it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:29,  1.93it/s]Loading weights:  71%|███████▏  | 207/290 [00:00<00:00, 443.76it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 289.63it/s]
+dense-c200 q01 False 3.14
+dense-c200 q02 False 3.31
+dense-c200 q03 False 2.17
+dense-c200 q04 True 2.69
+dense-c200 q05 False 2.81
+dense-c200 q06 False 2.91
+dense-c200 q07 False 2.98
+dense-c200 q08 False 2.46
+dense-c200 q09 True 2.11
+dense-c200 q10 False 2.12
+dense-c200 q11 False 2.98
+dense-c200 q12 True 3.97
+dense-c200 q13 False 3.34
+dense-c200 q14 False 2.42
+dense-c200 q15 False 2.54
+dense-c200 q16 False 2.07
+dense-c200 q17 False 1.91
+dense-c200 q18 False 3.14
+dense-c200 q19 False 2.74
+dense-c200 q20 False 2.81
+dense-c200 q21 False 1.96
+dense-c200 q22 False 2.33
+dense-c200 q23 False 3.16
+dense-c200 q24 False 2.57
+dense-c200 q25 False 2.19
+dense-c200 q26 False 2.16
+dense-c200 q27 False 2.34
+dense-c200 q28 False 2.92
+dense-c200 q29 False 4.95
+dense-c200 q30 False 2.84
+dense-c200 {'answer_accuracy': 0.1, 'retrieval_hit@3': 0.8666666666666667, 'n': 30, 'latency_p50_s': 2.7111323080007423, 'latency_p95_s': 3.6882243402975297, 'retrieval_p50_ms': 10.641827499057399, 'tokens_in_mean': 1026.4333333333334, 'tokens_out_mean': 6.433333333333334, 'tokens_per_sec_p50': 1.5861500086698186, 'cost_per_request_usd_mean': 0.00010521666666666667}
+hybrid-c200 q01 False 2.39
+hybrid-c200 q02 True 3.09
+hybrid-c200 q03 False 2.64
+hybrid-c200 q04 True 2.6
+hybrid-c200 q05 True 2.69
+hybrid-c200 q06 False 2.33
+hybrid-c200 q07 False 2.14
+hybrid-c200 q08 False 2.31
+hybrid-c200 q09 False 3.07
+hybrid-c200 q10 False 2.08
+hybrid-c200 q11 False 2.0
+hybrid-c200 q12 True 3.0
+hybrid-c200 q13 False 2.49
+hybrid-c200 q14 True 2.19
+hybrid-c200 q15 False 1.95
+hybrid-c200 q16 True 3.98
+hybrid-c200 q17 False 1.74
+hybrid-c200 q18 False 2.74
+hybrid-c200 q19 True 3.02
+hybrid-c200 q20 False 2.58
+hybrid-c200 q21 False 2.67
+hybrid-c200 q22 False 2.42
+hybrid-c200 q23 False 3.53
+hybrid-c200 q24 False 3.35
+hybrid-c200 q25 False 3.18
+hybrid-c200 q26 False 5.0
+hybrid-c200 q27 True 2.68
+hybrid-c200 q28 False 3.12
+hybrid-c200 q29 False 2.59
+hybrid-c200 q30 False 2.71
+hybrid-c200 {'answer_accuracy': 0.26666666666666666, 'retrieval_hit@3': 0.8666666666666667, 'n': 30, 'latency_p50_s': 2.653970590499739, 'latency_p95_s': 3.776767735399881, 'retrieval_p50_ms': 9.389997998368926, 'tokens_in_mean': 1026.4, 'tokens_out_mean': 7.733333333333333, 'tokens_per_sec_p50': 1.97584924868991, 'cost_per_request_usd_mean': 0.00010573333333333335}

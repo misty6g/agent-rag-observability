@@ -11,7 +11,7 @@ class Generation:
 
 class HFChatLLM:
     """Local instruct model via HF transformers on CPU, greedy decoding."""
-    def __init__(self, name: str = "Qwen/Qwen2.5-0.5B-Instruct", max_new_tokens: int = 48):
+    def __init__(self, name: str = "Qwen/Qwen2.5-0.5B-Instruct", max_new_tokens: int = 48, dtype: str = "float32"):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
         torch.manual_seed(0)
@@ -19,7 +19,7 @@ class HFChatLLM:
         self.torch = torch
         self.name = name
         self.tok = AutoTokenizer.from_pretrained(name)
-        self.model = AutoModelForCausalLM.from_pretrained(name, torch_dtype=torch.float32).eval()
+        self.model = AutoModelForCausalLM.from_pretrained(name, torch_dtype=getattr(torch, dtype)).eval()
         self.max_new_tokens = max_new_tokens
     def generate(self, system: str, user: str) -> Generation:
         msgs = [{"role": "system", "content": system}, {"role": "user", "content": user}]

@@ -1,0 +1,28 @@
+# Knative service spec for Cloud Run. Deploy with:
+#   gcloud builds submit --tag REGION-docker.pkg.dev/PROJECT/ragobs/ragobs
+#   gcloud run services replace deploy/cloudrun-service.yaml --region REGION
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: agent-rag-observability
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: "2"
+        run.googleapis.com/cpu-throttling: "false"
+        run.googleapis.com/startup-cpu-boost: "true"
+    spec:
+      containerConcurrency: 1
+      timeoutSeconds: 300
+      containers:
+        - image: REGION-docker.pkg.dev/PROJECT/ragobs/ragobs
+          ports: [{containerPort: 8080}]
+          resources:
+            limits: {cpu: "4", memory: 8Gi}
+          env:
+            - {name: LLM_MODEL, value: Qwen/Qwen2.5-0.5B-Instruct}
+          startupProbe:
+            httpGet: {path: /healthz}
+            periodSeconds: 10
+            failureThreshold: 30

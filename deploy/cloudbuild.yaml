@@ -1,0 +1,11 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: [build, -t, $_IMAGE, .]
+  - name: gcr.io/cloud-builders/docker
+    args: [push, $_IMAGE]
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args: [run, deploy, agent-rag-observability, --image, $_IMAGE, --region, $_REGION, --memory, 8Gi, --cpu, "4", --concurrency, "1"]
+substitutions:
+  _REGION: us-east4
+  _IMAGE: us-east4-docker.pkg.dev/${PROJECT_ID}/ragobs/ragobs
