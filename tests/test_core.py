@@ -37,6 +37,8 @@ def test_recall_mrr():
 def test_answer_correct_normalizes():
     assert answer_correct("Use `url_for()`.", ["url_for"])
     assert not answer_correct("I don't know", ["url_for"])
+    assert not answer_correct("SESSION_COOKIE_NAME", ["session"])
+    assert answer_correct("use the --debug flag", ["--debug"])
 
 def test_percentile():
     assert percentile([1, 2, 3, 4], 50) == 2.5

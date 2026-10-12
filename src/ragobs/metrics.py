@@ -14,8 +14,9 @@ def _norm(s: str) -> str:
     return re.sub(r"[\s`'\"*]+", " ", s.lower()).strip()
 
 def answer_correct(answer: str, golds: list[str]) -> bool:
+    """Gold string must appear as a whole token (so 'session' does NOT match 'SESSION_COOKIE_NAME')."""
     a = _norm(answer)
-    return any(_norm(g) in a for g in golds)
+    return any(re.search(r"(?<![\w])" + re.escape(_norm(g)) + r"(?![\w])", a) for g in golds)
 
 def percentile(xs: list[float], p: float) -> float:
     if not xs:

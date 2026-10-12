@@ -1,0 +1,62 @@
+{
+  "_pricing_assumption_usd_per_1M_tokens": {
+    "input_per_m": 0.1,
+    "output_per_m": 0.4
+  },
+  "Qwen2.5-0.5B-Instruct_dense-c200": {
+    "n": 30,
+    "latency_p50_s": 2.7111323080007423,
+    "latency_p95_s": 3.6882243402975297,
+    "retrieval_p50_ms": 10.641827499057399,
+    "tokens_in_mean": 1026.4333333333334,
+    "tokens_out_mean": 6.433333333333334,
+    "tokens_per_sec_p50": 1.5861500086698186,
+    "cost_per_request_usd_mean": 0.00010521666666666667,
+    "answer_accuracy": 0.1,
+    "retrieval_hit@3": 0.8666666666666667,
+    "total_tokens_per_sec_p50": 406.75359515719333,
+    "cost_per_1k_requests_usd": 0.10521666666666667
+  },
+  "Qwen2.5-0.5B-Instruct_hybrid-c200": {
+    "n": 30,
+    "latency_p50_s": 2.653970590499739,
+    "latency_p95_s": 3.776767735399881,
+    "retrieval_p50_ms": 9.389997998368926,
+    "tokens_in_mean": 1026.4,
+    "tokens_out_mean": 7.733333333333333,
+    "tokens_per_sec_p50": 1.97584924868991,
+    "cost_per_request_usd_mean": 0.00010573333333333335,
+    "answer_accuracy": 0.26666666666666666,
+    "retrieval_hit@3": 0.8666666666666667,
+    "total_tokens_per_sec_p50": 410.7723904286769,
+    "cost_per_1k_requests_usd": 0.10573333333333335
+  },
+  "Qwen2.5-1.5B-Instruct_dense-c200": {
+    "n": 30,
+    "latency_p50_s": 3.7984108885011665,
+    "latency_p95_s": 4.877430214500419,
+    "retrieval_p50_ms": 9.853986999587505,
+    "tokens_in_mean": 1026.4333333333334,
+    "tokens_out_mean": 6.233333333333333,
+    "tokens_per_sec_p50": 1.4654119806661958,
+    "cost_per_request_usd_mean": 0.00010513666666666669,
+    "answer_accuracy": 0.43333333333333335,
+    "retrieval_hit@3": 0.8666666666666667,
+    "total_tokens_per_sec_p50": 288.75696564361976,
+    "cost_per_1k_requests_usd": 0.10513666666666668
+  },
+  "Qwen2.5-1.5B-Instruct_hybrid-c200": {
+    "n": 30,
+    "latency_p50_s": 3.4121026174998406,
+    "latency_p95_s": 5.891227872550735,
+    "retrieval_p50_ms": 11.90511700042407,
+    "tokens_in_mean": 1026.4,
+    "tokens_out_mean": 6.366666666666666,
+    "tokens_per_sec_p50": 1.3183198178403104,
+    "cost_per_request_usd_mean": 0.00010518666666666667,
+    "answer_accuracy": 0.7,
+    "retrieval_hit@3": 0.8666666666666667,
+    "total_tokens_per_sec_p50": 298.4997640722371,
+    "cost_per_1k_requests_usd": 0.10518666666666668
+  }
+}
